@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jules Brun — Étudiant ingénieur informatique</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1E2A38',
+          inksoft: '#57677A',
+          bg: '#EEF2F7',
+          surface: '#FFFFFF',
+          line: '#CBD6E1',
+          accent: '#3E5C76',
+          accentsoft: '#7B93AC',
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          body: ['"Inter"', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #EEF2F7; }
+  .timeline-line { background: linear-gradient(to bottom, #CBD6E1, #7B93AC); }
+  .fade-up { animation: fadeUp 0.7s ease-out both; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+  ::selection { background-color: #7B93AC; color: #ffffff; }
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-30 backdrop-blur bg-bg/85 border-b border-line">
+    <div class="max-w-5xl mx-auto px-6 md:px-10 flex items-center justify-between h-16">
+      <a href="#top" class="font-display font-semibold tracking-tight text-ink">Jules Brun</a>
+      <nav class="hidden sm:flex gap-8 text-sm text-inksoft">
+        <a href="#parcours" class="hover:text-accent transition-colors">Parcours</a>
+        <a href="#projets" class="hover:text-accent transition-colors">Projets</a>
+        <a href="#competences" class="hover:text-accent transition-colors">Compétences</a>
+        <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-24">
+    <div class="fade-up">
+      <p class="text-accent font-medium text-sm mb-4">Étudiant en 2ème année, école d'ingénieur informatique</p>
+      <h1 class="font-display text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight leading-[1.05] text-ink max-w-3xl">
+        Jules Brun construit des choses qui tournent, se déploient et rendent service.
+      </h1>
+      <p class="mt-7 text-inksoft text-lg max-w-xl leading-relaxed">
+        Depuis un bac Physique-Chimie / Mathématiques, je suis passé de la théorie à la pratique :
+        algorithmique, développement web, applications mobiles et bases de données.
+        Cette page rassemble mon parcours et quatre projets que j'ai menés en école.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4 text-sm">
+        <a href="#projets" class="px-5 py-2.5 rounded-full bg-ink text-white hover:bg-accent transition-colors">Voir les projets</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-full border border-line text-ink hover:border-accent hover:text-accent transition-colors">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours" class="max-w-5xl mx-auto px-6 md:px-10 py-20 border-t border-line">
+    <div class="flex items-baseline justify-between mb-14">
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink">Parcours</h2>
+      <span class="text-sm text-inksoft hidden sm:block">2022 — aujourd'hui</span>
+    </div>
+
+    <ol class="relative pl-10">
+      <span class="absolute left-[7px] top-2 bottom-2 w-px timeline-line"></span>
+
+      <li class="relative pb-14">
+        <span class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-surface border-2 border-accent"></span>
+        <p class="text-sm text-accent font-medium mb-1">2024</p>
+        <h3 class="font-display text-xl font-semibold text-ink">Baccalauréat général — spécialités Physique-Chimie &amp; Mathématiques</h3>
+        <p class="mt-2 text-inksoft leading-relaxed max-w-2xl">
+          Mention Bien. Un goût confirmé pour la résolution de problèmes concrets et la rigueur du raisonnement
+          scientifique, deux réflexes que je retrouve aujourd'hui dans l'algorithmique et le débogage.
+        </p>
+      </li>
+
+      <li class="relative pb-14">
+        <span class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-surface border-2 border-accent"></span>
+        <p class="text-sm text-accent font-medium mb-1">2024 — 2025</p>
+        <h3 class="font-display text-xl font-semibold text-ink">1ère année — cycle ingénieur informatique</h3>
+        <p class="mt-2 text-inksoft leading-relaxed max-w-2xl">
+          Bases de la programmation (C, Python), structures de données, algorithmique, architecture des ordinateurs
+          et mathématiques appliquées. Premiers projets en binôme et découverte du travail en mode agile.
+        </p>
+      </li>
+
+      <li class="relative">
+        <span class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-accent border-2 border-accent"></span>
+        <p class="text-sm text-accent font-medium mb-1">2025 — 2026 · en cours</p>
+        <h3 class="font-display text-xl font-semibold text-ink">2ème année — spécialisation développement logiciel</h3>
+        <p class="mt-2 text-inksoft leading-relaxed max-w-2xl">
+          Programmation orientée objet (Java), bases de données relationnelles, réseaux, développement web
+          full-stack et développement mobile. Quatre projets d'application menés cette année, présentés ci-dessous.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="max-w-5xl mx-auto px-6 md:px-10 py-20 border-t border-line">
+    <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink mb-14">Projets d'application</h2>
+
+    <div class="divide-y divide-line border-y border-line">
+
+      <article class="py-10 grid md:grid-cols-[auto_1fr] gap-x-10 gap-y-4">
+        <span class="font-display text-sm text-accentsoft">01 / Web</span>
+        <div>
+          <h3 class="font-display text-2xl font-semibold text-ink">TaskFlow — gestionnaire de tâches collaboratif</h3>
+          <p class="mt-3 text-inksoft leading-relaxed max-w-2xl">
+            Application web permettant à une équipe de créer des tableaux de tâches, d'assigner des échéances
+            et de suivre l'avancement en temps réel via WebSocket. Projet réalisé en groupe de quatre sur un semestre.
+          </p>
+          <ul class="mt-4 flex flex-wrap gap-2 text-xs text-inksoft">
+            <li class="px-3 py-1 rounded-full border border-line">React</li>
+            <li class="px-3 py-1 rounded-full border border-line">Node.js</li>
+            <li class="px-3 py-1 rounded-full border border-line">MongoDB</li>
+            <li class="px-3 py-1 rounded-full border border-line">Socket.IO</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="py-10 grid md:grid-cols-[auto_1fr] gap-x-10 gap-y-4">
+        <span class="font-display text-sm text-accentsoft">02 / Mobile</span>
+        <div>
+          <h3 class="font-display text-2xl font-semibold text-ink">SkyCast — application météo Android</h3>
+          <p class="mt-3 text-inksoft leading-relaxed max-w-2xl">
+            Application mobile affichant les prévisions locales et une carte des précipitations, avec géolocalisation
+            et gestion de plusieurs villes favorites. Consommation d'une API météo publique et mise en cache locale.
+          </p>
+          <ul class="mt-4 flex flex-wrap gap-2 text-xs text-inksoft">
+            <li class="px-3 py-1 rounded-full border border-line">Kotlin</li>
+            <li class="px-3 py-1 rounded-full border border-line">Android Studio</li>
+            <li class="px-3 py-1 rounded-full border border-line">REST API</li>
+            <li class="px-3 py-1 rounded-full border border-line">Room (SQLite)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="py-10 grid md:grid-cols-[auto_1fr] gap-x-10 gap-y-4">
+        <span class="font-display text-sm text-accentsoft">03 / Algorithmique</span>
+        <div>
+          <h3 class="font-display text-2xl font-semibold text-ink">Labyrinthe & IA — jeu 2D en Python</h3>
+          <p class="mt-3 text-inksoft leading-relaxed max-w-2xl">
+            Jeu de labyrinthe généré procéduralement, avec un adversaire contrôlé par un algorithme de recherche
+            de chemin (A*). Projet individuel destiné à mettre en pratique les structures de graphes vues en cours.
+          </p>
+          <ul class="mt-4 flex flex-wrap gap-2 text-xs text-inksoft">
+            <li class="px-3 py-1 rounded-full border border-line">Python</li>
+            <li class="px-3 py-1 rounded-full border border-line">Pygame</li>
+            <li class="px-3 py-1 rounded-full border border-line">Algorithme A*</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="py-10 grid md:grid-cols-[auto_1fr] gap-x-10 gap-y-4">
+        <span class="font-display text-sm text-accentsoft">04 / Web &amp; BDD</span>
+        <div>
+          <h3 class="font-display text-2xl font-semibold text-ink">Bricoline — boutique en ligne fictive</h3>
+          <p class="mt-3 text-inksoft leading-relaxed max-w-2xl">
+            Site e-commerce complet avec catalogue, panier, gestion de compte client et back-office d'administration
+            des stocks. Projet de fin de semestre autour du modèle relationnel et de la sécurisation des formulaires.
+          </p>
+          <ul class="mt-4 flex flex-wrap gap-2 text-xs text-inksoft">
+            <li class="px-3 py-1 rounded-full border border-line">PHP</li>
+            <li class="px-3 py-1 rounded-full border border-line">MySQL</li>
+            <li class="px-3 py-1 rounded-full border border-line">HTML / CSS / JS</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section id="competences" class="max-w-5xl mx-auto px-6 md:px-10 py-20 border-t border-line">
+    <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink mb-12">Compétences</h2>
+    <div class="grid sm:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-display text-lg font-semibold text-ink mb-3">Langages</h3>
+        <p class="text-inksoft leading-relaxed text-sm">Java, Python, Kotlin, JavaScript, PHP, C</p>
+      </div>
+      <div>
+        <h3 class="font-display text-lg font-semibold text-ink mb-3">Web &amp; données</h3>
+        <p class="text-inksoft leading-relaxed text-sm">React, Node.js, SQL, MongoDB, REST API</p>
+      </div>
+      <div>
+        <h3 class="font-display text-lg font-semibold text-ink mb-3">Outils</h3>
+        <p class="text-inksoft leading-relaxed text-sm">Git, Docker, Figma, méthode Agile / Scrum</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="border-t border-line">
+    <div class="max-w-5xl mx-auto px-6 md:px-10 py-16 flex flex-col sm:flex-row sm:items-end justify-between gap-8">
+      <div>
+        <h2 class="font-display text-3xl font-semibold text-ink mb-3">Discutons de votre projet.</h2>
+        <p class="text-inksoft max-w-md">Ouvert aux stages et aux projets en développement web ou mobile.</p>
+      </div>
+      <div class="text-sm text-inksoft space-y-1.5">
+        <p><a href="mailto:jules.brun@example.com" class="text-ink hover:text-accent transition-colors">jules.brun@example.com</a></p>
+        <p><a href="https://linkedin.com" class="hover:text-accent transition-colors">linkedin.com/in/julesbrun</a></p>
+        <p><a href="https://github.com" class="hover:text-accent transition-colors">github.com/julesbrun</a></p>
+      </div>
+    </div>
+    <div class="max-w-5xl mx-auto px-6 md:px-10 pb-10 text-xs text-inksoft/70">
+      © 2026 Jules Brun
+    </div>
+  </footer>
+
+</body>
+</html>
