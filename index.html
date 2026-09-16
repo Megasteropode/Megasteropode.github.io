@@ -7,7 +7,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>
   tailwind.config = {
     theme: {
@@ -22,8 +22,8 @@
           accentsoft: '#7B93AC',
         },
         fontFamily: {
-          display: ['"Space Grotesk"', 'sans-serif'],
-          body: ['"Inter"', 'sans-serif'],
+          display: ['"Orbitron"', 'sans-serif'],
+          body: ['"Rajdhani"', 'sans-serif'],
         },
       }
     }
@@ -56,6 +56,7 @@
         <a href="#experience" class="hover:text-accent transition-colors">Expérience</a>
         <a href="#projets" class="hover:text-accent transition-colors">Projets</a>
         <a href="#competences" class="hover:text-accent transition-colors">Compétences</a>
+        <a href="#hobbies" class="hover:text-accent transition-colors">JDR</a>
         <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
       </nav>
     </div>
@@ -262,6 +263,36 @@
       <div>
         <h3 class="font-display text-lg font-semibold text-ink mb-3">Savoir-être</h3>
         <p class="text-inksoft leading-relaxed text-sm">Polyvalence, adaptabilité, résilience, travail d'équipe, aisance communicationnelle</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENTRES D'INTERET -->
+  <section id="hobbies" class="max-w-5xl mx-auto px-6 md:px-10 py-20 border-t border-line">
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+      <div>
+        <p class="text-accent font-medium text-sm mb-4">À côté des cours</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-ink mb-6">Le jeu de rôle sur table</h2>
+        <p class="text-inksoft leading-relaxed max-w-md">
+          Mon passe-temps favori : maîtriser des parties de jeu de rôle sur table. Construire un univers
+          cohérent, préparer une intrigue et improviser quand les joueurs prennent une voie inattendue —
+          ça demande la même rigueur que concevoir un logiciel, avec une bonne dose de créativité en plus.
+        </p>
+      </div>
+
+      <div class="flex justify-center">
+        <svg viewBox="0 0 220 220" class="w-56 h-56" role="img" aria-label="Illustration d'un dé à vingt faces">
+          <polygon points="110,30 179,70 179,150 110,190 41,150 41,70"
+                   fill="none" stroke="#3E5C76" stroke-width="2" stroke-linejoin="round" />
+          <polygon points="110,30 179,70 110,110" fill="#7B93AC" fill-opacity="0.18" stroke="#3E5C76" stroke-width="1.2" />
+          <polygon points="179,70 179,150 110,110" fill="#7B93AC" fill-opacity="0.06" stroke="#3E5C76" stroke-width="1.2" />
+          <polygon points="179,150 110,190 110,110" fill="#7B93AC" fill-opacity="0.18" stroke="#3E5C76" stroke-width="1.2" />
+          <polygon points="110,190 41,150 110,110" fill="#7B93AC" fill-opacity="0.06" stroke="#3E5C76" stroke-width="1.2" />
+          <polygon points="41,150 41,70 110,110" fill="#7B93AC" fill-opacity="0.18" stroke="#3E5C76" stroke-width="1.2" />
+          <polygon points="41,70 110,30 110,110" fill="#7B93AC" fill-opacity="0.06" stroke="#3E5C76" stroke-width="1.2" />
+          <text x="110" y="118" text-anchor="middle" font-family="'Orbitron', sans-serif"
+                font-size="28" font-weight="700" fill="#1E2A38">20</text>
+        </svg>
       </div>
     </div>
   </section>
